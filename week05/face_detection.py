@@ -23,7 +23,7 @@ gray_scale = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 
 
 # 4) Face detection
-face = face_casecade.detectMultiScale(gray_scale, scaleFactor=1.1, minNeighbors=5,minSize=(30,30))
+face = face_casecade.detectMultiScale(gray_scale, scaleFactor=1.1, minNeighbors=10,minSize=(30,30))
 #.detectMultiScale() = detection object
 # if the object is near camera => Big face
 # if the object is far camera => Small face
