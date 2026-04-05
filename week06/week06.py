@@ -27,7 +27,7 @@ while True:
         
        
     cv.imshow('My camera', frame)
-    
+    print(f'Face found{len(face)}')
 
     if cv.waitKey(1) == ord('q'):
         break
